@@ -9,7 +9,7 @@ npm create vue@latest
 ```
 
 ```shell
-npx nuxi@latest init
+npx nuxi@latest init --force .
 ```
 
 ```shell
@@ -23,7 +23,8 @@ npx eslint --init
 ```
 
 ```shell
-npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-simple-import-sort
+npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+npm i -D eslint-plugin-simple-import-sort
 ```
 
 ## Prettier
