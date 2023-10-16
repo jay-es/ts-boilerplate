@@ -10,9 +10,12 @@ npm create vue@latest
 
 ```shell
 npx nuxi@latest init --force .
+pnpm dlx nuxi@latest init
+bunx nuxi@latest init
 ```
 
 ```shell
+npm create next-app@latest
 npx create-next-app@latest
 ```
 
