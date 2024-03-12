@@ -19,6 +19,23 @@ npm create next-app@latest
 npx create-next-app@latest
 ```
 
+## TSConfig bases
+
+```shell
+npm i -D @tsconfig/strictest
+```
+
+`tsconfig.json`
+
+```jsonc
+  "extends": "@tsconfig/strictest/tsconfig",
+
+  "extends": [
+    "@tsconfig/strictest/tsconfig",
+    ...
+  ],
+```
+
 ## ESLint
 
 ```shell
@@ -39,8 +56,8 @@ npm i -D prettier eslint-config-prettier
 ## Tailwind CSS
 
 ```shell
-npm i -D tailwindcss
-npx tailwindcss init
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 ```
 
 ```shell
@@ -51,6 +68,30 @@ npm i -D prettier-plugin-tailwindcss
 
 ```javascript
   plugins: ['prettier-plugin-tailwindcss'],
+```
+
+### Tailwind CSS Typography
+
+```shell
+npm install -D @tailwindcss/typography
+```
+
+`tailwind.config.js`
+
+```javascript
+  plugins: [require('@tailwindcss/typography')],
+```
+
+### daisyUI
+
+```shell
+npm i -D daisyui@latest
+```
+
+`tailwind.config.js`
+
+```javascript
+  plugins: [require("daisyui")],
 ```
 
 ## Testing
