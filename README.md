@@ -53,6 +53,19 @@ npm i -D eslint-plugin-simple-import-sort
 npm i -D prettier eslint-config-prettier
 ```
 
+## Biome
+
+```shell
+npm install --save-dev --save-exact @biomejs/biome
+npx @biomejs/biome init
+```
+
+```json
+  "formatter": {
+    "indentStyle": "space"
+  },
+```
+
 ## Tailwind CSS
 
 ```shell
