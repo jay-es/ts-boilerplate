@@ -73,6 +73,23 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
+`tailwind.config.js`
+
+```javascript
+  // Using Vue
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+```
+
+`main.css`
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### Prettier Plugin Tailwindcss
+
 ```shell
 npm i -D prettier-plugin-tailwindcss
 ```
